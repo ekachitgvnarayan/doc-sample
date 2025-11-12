@@ -2,14 +2,14 @@
 
 ## Step 01
 
-1. podman machine init
-2. podman machine start
+Create an Oracle account and Sign-in to the account from [Here](https://container-registry.oracle.com/)
 
 ---
 
 ## Step 02
 
-Create an Oracle account and Sign-in to the account from [Here](https://container-registry.oracle.com/)
+1. podman machine init
+2. podman machine start
 
 ---
 
