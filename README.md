@@ -30,7 +30,8 @@ run this in the terminal to pull the oracle db image
 
 ## Step 05
 
-```podman run -d \
+```
+  podman run -d \
   --name oracle-db \
   -p 1521:1521 -p 5500:5500 \
   -e ORACLE_PWD=[YourDesiredPasswordHere…] \
