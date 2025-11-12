@@ -1,19 +1,19 @@
-###How to Install SQL Database with Podman
+# How to Install SQL Database with Podman
 
-##Step 01
+## Step 01
 
 1. podman machine init
 2. podman machine start
 
 ---
 
-##Step 02
+## Step 02
 
 Create an Oracle account and Sign-in to the account from [Here](https://container-registry.oracle.com/)
 
 ---
 
-##Step 03
+## Step 03
 
 Run this command
 `podman login container-registry.oracle.com`
@@ -21,14 +21,14 @@ Run this command
 
 ---
 
-##Step 04
+## Step 04
 
 run this in the terminal to pull the oracle db image
 `podman pull --tls-verify=false container-registry.oracle.com/database/free:latest`
 
 ---
 
-##Step 05
+## Step 05
 
 ```podman run -d \
   --name oracle-db \
@@ -40,11 +40,12 @@ run this in the terminal to pull the oracle db image
 
 ---
 
-##Step 06
-#If you are in Podman Terminal
+## Step 06
+
+### If you are in Podman Terminal
 `podman logs -f oracle-db`
 
-#If you use Podman Desktop
+### If you use Podman Desktop
 
 Open the Podman desktop and open oracle container in Containers section on the left. 
 Check the logs and see if you can see **DATABASE IS READY TO USE!**
